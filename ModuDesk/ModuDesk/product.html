@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Products | ModuDesk</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@600;700&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="index.html">Modu<span>Desk</span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html" class="on">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="cart.html">Cart <span class="count">0</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="band page-head">
+      <div class="wrap">
+        <h1>Build your desk, module by module</h1>
+        <p>Every part shares the same clip system, so anything here fits any ModuDesk base. Free shipping on orders over $150.</p>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <section>
+        <div class="filters" role="group" aria-label="Filter products">
+        <button class="chip on" data-filter="All">All</button>
+        <button class="chip" data-filter="Desks">Desks</button>
+        <button class="chip" data-filter="Storage">Storage</button>
+        <button class="chip" data-filter="Ergonomics">Ergonomics</button>
+        <button class="chip" data-filter="Accessories">Accessories</button>
+          <span class="found" id="found">12 products</span>
+        </div>
+
+        <div class="grid products" id="list">
+          <article class="card product" data-cat="Desks">
+            <span class="badge">Bestseller</span>
+            <div class="swatch c-ink">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Base Desk">
+                <rect x="14" y="30" width="92" height="7" rx="2" fill="#F7F8F7"/>
+                <rect x="20" y="37" width="5" height="30" fill="#F7F8F7"/>
+                <rect x="95" y="37" width="5" height="30" fill="#F7F8F7"/>
+                <rect x="30" y="33" width="60" height="1.5" fill="#F0B429"/>
+              </svg>
+            </div>
+            <span class="cat">Desks</span>
+            <h3>Base Desk</h3>
+            <p>140 cm birch-finish top with slotted rails.</p>
+            <ul class="specs">
+              <li>140 × 70 cm</li>
+              <li>Birch plywood</li>
+              <li>Steel frame</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$289</span>
+              <button class="btn" data-id="1" data-name="Base Desk">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Storage">
+            <div class="swatch c-teal">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Drawer Module">
+                <rect x="30" y="18" width="60" height="46" rx="3" fill="#F7F8F7"/>
+                <rect x="36" y="24" width="48" height="16" rx="2" fill="#0E6F68"/>
+                <rect x="36" y="44" width="48" height="14" rx="2" fill="#0E6F68"/>
+                <rect x="54" y="30" width="12" height="3" rx="1.5" fill="#F0B429"/>
+                <rect x="54" y="49" width="12" height="3" rx="1.5" fill="#F0B429"/>
+              </svg>
+            </div>
+            <span class="cat">Storage</span>
+            <h3>Drawer Module</h3>
+            <p>Soft-close drawer that clips under the rail.</p>
+            <ul class="specs">
+              <li>40 × 45 cm</li>
+              <li>Soft-close</li>
+              <li>Clips under rail</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$119</span>
+              <button class="btn" data-id="2" data-name="Drawer Module">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Ergonomics">
+            <span class="badge">Popular</span>
+            <div class="swatch c-amber">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Monitor Riser">
+                <rect x="26" y="20" width="68" height="26" rx="3" fill="#16202B"/>
+                <rect x="56" y="46" width="8" height="6" fill="#16202B"/>
+                <rect x="22" y="52" width="76" height="6" rx="2" fill="#16202B"/>
+                <rect x="30" y="58" width="6" height="10" fill="#16202B"/>
+                <rect x="84" y="58" width="6" height="10" fill="#16202B"/>
+              </svg>
+            </div>
+            <span class="cat">Ergonomics</span>
+            <h3>Monitor Riser</h3>
+            <p>Lifts your screen and stores a keyboard below.</p>
+            <ul class="specs">
+              <li>Holds 20 kg</li>
+              <li>12 cm lift</li>
+              <li>Keyboard slot</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$79</span>
+              <button class="btn" data-id="3" data-name="Monitor Riser">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Accessories">
+            <div class="swatch c-mint">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Cable Tray">
+                <path d="M20 38h80v6a4 4 0 0 1-4 4H24a4 4 0 0 1-4-4z" fill="#16202B"/>
+                <path d="M28 30c10-8 18 8 28 0s18 8 28 0" stroke="#F7F8F7" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <path d="M34 26c8-6 16 6 24 0" stroke="#F0B429" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="cat">Accessories</span>
+            <h3>Cable Tray</h3>
+            <p>Hides power strips and cables in one click.</p>
+            <ul class="specs">
+              <li>60 cm long</li>
+              <li>Clip-on</li>
+              <li>Steel mesh</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$39</span>
+              <button class="btn" data-id="4" data-name="Cable Tray">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Storage">
+            <div class="swatch c-slate">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Side Shelf">
+                <rect x="22" y="40" width="76" height="6" rx="2" fill="#F7F8F7"/>
+                <rect x="30" y="46" width="5" height="14" fill="#F7F8F7"/>
+                <rect x="60" y="22" width="14" height="18" rx="2" fill="#F0B429"/>
+                <rect x="36" y="30" width="6" height="10" fill="#8FB8B3"/>
+                <rect x="44" y="28" width="6" height="12" fill="#0E6F68"/>
+              </svg>
+            </div>
+            <span class="cat">Storage</span>
+            <h3>Side Shelf</h3>
+            <p>Extra surface for plants, books, or a lamp.</p>
+            <ul class="specs">
+              <li>30 × 25 cm</li>
+              <li>Holds 10 kg</li>
+              <li>Left or right</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$99</span>
+              <button class="btn" data-id="5" data-name="Side Shelf">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Accessories">
+            <div class="swatch c-grey">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Desk Mat">
+                <rect x="18" y="26" width="84" height="34" rx="5" fill="#16202B"/>
+                <rect x="22" y="30" width="76" height="26" rx="3" fill="none" stroke="#F0B429" stroke-width="1.5" stroke-dasharray="3 3"/>
+              </svg>
+            </div>
+            <span class="cat">Accessories</span>
+            <h3>Desk Mat</h3>
+            <p>Felt mat that fits the Base Desk exactly.</p>
+            <ul class="specs">
+              <li>70 × 35 cm</li>
+              <li>3 mm felt</li>
+              <li>Anti-slip back</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$49</span>
+              <button class="btn" data-id="6" data-name="Desk Mat">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Desks">
+            <span class="badge">New</span>
+            <div class="swatch c-teal">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Corner Extension">
+                <path d="M18 28h84v8H46v26h-8V36H18z" fill="#F7F8F7"/>
+                <rect x="40" y="31" width="58" height="1.5" fill="#F0B429"/>
+              </svg>
+            </div>
+            <span class="cat">Desks</span>
+            <h3>Corner Extension</h3>
+            <p>L-shaped wing that doubles your work surface.</p>
+            <ul class="specs">
+              <li>80 × 50 cm</li>
+              <li>Fits any base</li>
+              <li>Tool-free clips</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$159</span>
+              <button class="btn" data-id="7" data-name="Corner Extension">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Ergonomics">
+            <span class="badge">New</span>
+            <div class="swatch c-ink">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Monitor Arm">
+                <rect x="22" y="62" width="30" height="5" rx="2" fill="#F7F8F7"/>
+                <rect x="35" y="30" width="4" height="32" fill="#F7F8F7"/>
+                <path d="M37 32l36-8" stroke="#F0B429" stroke-width="4" stroke-linecap="round"/>
+                <rect x="66" y="12" width="36" height="24" rx="3" fill="#F7F8F7"/>
+              </svg>
+            </div>
+            <span class="cat">Ergonomics</span>
+            <h3>Monitor Arm</h3>
+            <p>Gas-spring arm with full tilt, swivel and height.</p>
+            <ul class="specs">
+              <li>Up to 9 kg</li>
+              <li>VESA 75/100</li>
+              <li>Cable channel</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$129</span>
+              <button class="btn" data-id="8" data-name="Monitor Arm">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Ergonomics">
+            <div class="swatch c-mint">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Keyboard Tray">
+                <rect x="20" y="30" width="80" height="5" rx="2" fill="#16202B"/>
+                <rect x="26" y="40" width="68" height="16" rx="3" fill="#16202B"/>
+                <g fill="#F7F8F7">
+                  <rect x="30" y="44" width="8" height="3"/>
+                  <rect x="41" y="44" width="8" height="3"/>
+                  <rect x="52" y="44" width="8" height="3"/>
+                  <rect x="63" y="44" width="8" height="3"/>
+                  <rect x="74" y="44" width="8" height="3"/>
+                  <rect x="34" y="50" width="52" height="3"/>
+                </g>
+              </svg>
+            </div>
+            <span class="cat">Ergonomics</span>
+            <h3>Keyboard Tray</h3>
+            <p>Slide-out tray that frees up desk space.</p>
+            <ul class="specs">
+              <li>60 × 25 cm</li>
+              <li>Wrist rest</li>
+              <li>Slide-out rails</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$69</span>
+              <button class="btn" data-id="9" data-name="Keyboard Tray">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Storage">
+            <span class="badge">New</span>
+            <div class="swatch c-amber">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Pegboard Panel">
+                <rect x="26" y="14" width="68" height="50" rx="4" fill="#16202B"/>
+                <g fill="#F0B429">
+                  <circle cx="38" cy="26" r="2"/>
+                  <circle cx="52" cy="26" r="2"/>
+                  <circle cx="66" cy="26" r="2"/>
+                  <circle cx="80" cy="26" r="2"/>
+                  <circle cx="38" cy="40" r="2"/>
+                  <circle cx="52" cy="40" r="2"/>
+                  <circle cx="66" cy="40" r="2"/>
+                  <circle cx="80" cy="40" r="2"/>
+                  <circle cx="38" cy="54" r="2"/>
+                  <circle cx="52" cy="54" r="2"/>
+                  <circle cx="66" cy="54" r="2"/>
+                  <circle cx="80" cy="54" r="2"/>
+                </g>
+                <rect x="50" y="30" width="3" height="14" fill="#F7F8F7"/>
+                <rect x="64" y="28" width="12" height="3" fill="#F7F8F7"/>
+              </svg>
+            </div>
+            <span class="cat">Storage</span>
+            <h3>Pegboard Panel</h3>
+            <p>Rail-mounted board with hooks for tools and notes.</p>
+            <ul class="specs">
+              <li>40 × 30 cm</li>
+              <li>8 hooks incl.</li>
+              <li>Powder-coated</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$59</span>
+              <button class="btn" data-id="10" data-name="Pegboard Panel">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Accessories">
+            <div class="swatch c-slate">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Headphone Hook">
+                <rect x="30" y="16" width="60" height="6" rx="2" fill="#F7F8F7"/>
+                <rect x="56" y="22" width="8" height="12" fill="#F0B429"/>
+                <path d="M60 34c-18 0-18 28 0 28" stroke="#F0B429" stroke-width="5" fill="none" stroke-linecap="round"/>
+                <rect x="50" y="48" width="12" height="18" rx="5" fill="#F7F8F7"/>
+              </svg>
+            </div>
+            <span class="cat">Accessories</span>
+            <h3>Headphone Hook</h3>
+            <p>Under-rail hook that keeps headphones off the desk.</p>
+            <ul class="specs">
+              <li>Holds 1 kg</li>
+              <li>Swivels 180°</li>
+              <li>Aluminium</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$19</span>
+              <button class="btn" data-id="11" data-name="Headphone Hook">Add to cart</button>
+            </div>
+          </article>
+
+          <article class="card product" data-cat="Accessories">
+            <div class="swatch c-ink">
+              <svg viewBox="0 0 120 80" role="img" aria-label="Lamp Clip">
+                <rect x="22" y="62" width="30" height="5" rx="2" fill="#F7F8F7"/>
+                <path d="M37 62V34l30-16" stroke="#F7F8F7" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M60 14l16 10-10 8z" fill="#F0B429"/>
+                <path d="M70 36l10 22M78 34l16 20" stroke="#F0B429" stroke-width="1.5" opacity=".6"/>
+              </svg>
+            </div>
+            <span class="cat">Accessories</span>
+            <h3>Lamp Clip</h3>
+            <p>Clamp-free LED lamp that locks onto the rail.</p>
+            <ul class="specs">
+              <li>8 W LED</li>
+              <li>3 colour temps</li>
+              <li>USB-C powered</li>
+            </ul>
+            <div class="buy">
+              <span class="price">$54</span>
+              <button class="btn" data-id="12" data-name="Lamp Clip">Add to cart</button>
+            </div>
+          </article>
+        </div>
+
+        <p class="note" id="msg" role="status"></p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">&copy; 2026 ModuDesk. Build your desk, your way.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
